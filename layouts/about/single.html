@@ -1,0 +1,606 @@
+{{ define "main" }}
+<!-- About Hero -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <span class="page-label reveal-up">Get to Know Me</span>
+    <h1 class="page-title reveal-up">About Me</h1>
+    <p class="page-subtitle reveal-up">
+      Discover my journey, skills, and the projects that define my path as a developer.
+    </p>
+  </div>
+  <div class="page-hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section class="education-section" id="education">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">Education</span>
+      <h2 class="section-title reveal-up">Academic Background</h2>
+    </div>
+    
+    <div class="education-card reveal-up">
+      <div class="education-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+      </div>
+      <div class="education-content">
+        <h3>B.Tech in Computer Science and Engineering</h3>
+        <p class="education-institution">Vellore Institute of Technology (VIT), Amaravati</p>
+        <div class="education-meta">
+          <span class="education-year">2022 – 2026</span>
+          <span class="education-gpa">CGPA: 8.04/10</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section" id="projects">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">Projects</span>
+      <h2 class="section-title reveal-up">What I've Built</h2>
+      <p class="section-subtitle reveal-up">Personal projects showcasing my technical abilities and problem-solving skills.</p>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card reveal-up" data-delay="0">
+        <div class="project-header">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+              <line x1="7" y1="2" x2="7" y2="22"></line>
+              <line x1="17" y1="2" x2="17" y2="22"></line>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <line x1="2" y1="7" x2="7" y2="7"></line>
+              <line x1="2" y1="17" x2="7" y2="17"></line>
+              <line x1="17" y1="17" x2="22" y2="17"></line>
+              <line x1="17" y1="7" x2="22" y2="7"></line>
+            </svg>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jheel23/zest" target="_blank" rel="noopener" aria-label="View source code">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">ZEST – Movie Streaming App</h3>
+        <p class="project-description">
+          Cross-platform application for discovering and browsing movies and TV shows using the TMDB API. 
+          Features user authentication with Auth0, genre/language filtering, and an intuitive responsive UI.
+        </p>
+        <div class="project-tech">
+          <span>Flutter</span>
+          <span>MongoDB</span>
+          <span>TMDB API</span>
+          <span>Auth0</span>
+        </div>
+      </article>
+      
+      <!-- Project 2 -->
+      <article class="project-card reveal-up" data-delay="100">
+        <div class="project-header">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jheel23/pestopia" target="_blank" rel="noopener" aria-label="View source code">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">Pestopia – Deep Learning Pest Identifier</h3>
+        <p class="project-description">
+          Deep learning model trained on the Pestopia dataset to classify pests and suggest relevant pesticides. 
+          Utilized MobileNet, ResNet, and custom CNN with transfer learning for high classification accuracy.
+        </p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>TensorFlow</span>
+          <span>MobileNet</span>
+          <span>ResNet</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Capstone Project Section -->
+<section class="capstone-section" id="capstone">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">Capstone Project</span>
+      <h2 class="section-title reveal-up">Latest Research Work</h2>
+    </div>
+    
+    <div class="capstone-card reveal-up">
+      <div class="capstone-badge">Recent</div>
+      <div class="capstone-content">
+        <h3 class="capstone-title">Bias Lens</h3>
+        <p class="capstone-abstract">
+           An AI-driven system that detects and neutralizes bias in news content using a custom-trained BERT model, rewrites flagged text through user-selectable rewriting models (Gemini or LLaMA-3), and provides fast access through both a web platform and a browser extension to deliver neutral, factual, and trustworthy information.
+        </p>
+        <div class="capstone-meta">
+          <div class="capstone-tech">
+            <span>Next.Js</span>
+            <span>Python</span>
+            <span>Google BERT</span>
+            <span>Gemini</span>
+            <span>Llama 3</span>
+          </div>
+          {{/*  <a href="/documents/capstone-report.pdf" class="btn btn-outline btn-sm" target="_blank">
+            <span>View Report</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>  */}}
+        </div>
+      </div>
+      <div class="capstone-image">
+        <!-- 
+          ADD CAPSTONE PROJECT IMAGE:
+          1. Place image in /static/images/capstone/ folder
+          2. Replace placeholder src below
+        -->
+        <img src="/images/capstone/project-preview.jpg" alt="Capstone Project Preview" loading="lazy" style="max-width: 100%; height: auto; display: block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section" id="skills">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">Technical Arsenal</span>
+      <h2 class="section-title reveal-up">Skills & Proficiency</h2>
+      <p class="section-subtitle reveal-up">
+        Technologies I work with and my expertise level in each domain.
+      </p>
+    </div>
+    
+    <div class="skills-container">
+      <!-- Languages -->
+      <div class="skill-category reveal-up" data-delay="0">
+        <h3 class="category-title">
+          <span class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </span>
+          Languages
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Dart</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Java</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Frameworks -->
+      <div class="skill-category reveal-up" data-delay="100">
+        <h3 class="category-title">
+          <span class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </span>
+          Frameworks
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Flutter</span>
+              <span class="skill-level">Expert</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Spring Boot</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cloud & DevOps -->
+      <div class="skill-category reveal-up" data-delay="200">
+        <h3 class="category-title">
+          <span class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+            </svg>
+          </span>
+          Cloud & DevOps
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">AWS (EC2, S3, Lambda)</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Firebase</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Jenkins / CI-CD</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="65"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Databases -->
+      <div class="skill-category reveal-up" data-delay="300">
+        <h3 class="category-title">
+          <span class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </span>
+          Databases
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Firebase Firestore</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">MySQL</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tools -->
+      <div class="skill-category reveal-up" data-delay="400">
+        <h3 class="category-title">
+          <span class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+          </span>
+          Tools & Others
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Git</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">REST APIs / OAuth2</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Clean Architecture</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Soft Skills -->
+      <div class="skill-category soft-skills reveal-up" data-delay="500">
+        <h3 class="category-title">
+          <span class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          Soft Skills
+        </h3>
+        <div class="soft-skills-grid">
+          <span class="soft-skill-tag">Time Management</span>
+          <span class="soft-skill-tag">Teamwork</span>
+          <span class="soft-skill-tag">Communication</span>
+          <span class="soft-skill-tag">Problem Solving</span>
+          <span class="soft-skill-tag">Adaptability</span>
+          <span class="soft-skill-tag">Leadership</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UI Gallery Section -->
+<section class="gallery-section" id="ui-gallery">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">UI Showcase</span>
+      <h2 class="section-title reveal-up">Mobile Design Gallery</h2>
+      <p class="section-subtitle reveal-up">
+        A curated collection of mobile UI designs and app interfaces I've crafted.
+      </p>
+    </div>
+    
+    <div class="gallery-container reveal-up">
+      <div class="gallery-track" id="gallery-track">
+        <!-- 
+          HOW TO ADD GALLERY IMAGES (MOBILE SCREENSHOTS):
+          1. Place mobile screenshots in /static/images/gallery/ folder
+          2. Name them sequentially: ui-1.jpg, ui-2.jpg, etc.
+          3. Recommended size: 1080x2340px (or any 9:19.5 mobile aspect ratio)
+          4. These should be actual mobile app screenshots in portrait orientation
+          5. Add more gallery-item divs as needed
+        -->
+        <div class="gallery-item">
+          <img src="/images/gallery/ui-1.jpg" alt="Mobile UI Design" loading="lazy">
+          <div class="gallery-caption">
+            <span class="caption-title">UI Showcase 1</span>
+            <span class="caption-desc">Flutter UI</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/gallery/ui-2.jpg" alt="Mobile UI Design" loading="lazy">
+          <div class="gallery-caption">
+            <span class="caption-title">UI Showcase 2</span>
+            <span class="caption-desc">Mobile Design</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/gallery/ui-3.jpg" alt="Mobile UI Design" loading="lazy">
+          <div class="gallery-caption">
+            <span class="caption-title">ZEST</span>
+            <span class="caption-desc">Streaming App</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/gallery/ui-4.png" alt="Mobile UI Design" loading="lazy">
+          <div class="gallery-caption">
+            <span class="caption-title">Authentication</span>
+            <span class="caption-desc">Auth0 Authentication</span>
+          </div>
+        </div>
+         <div class="gallery-item">
+          <img src="/images/gallery/ui-5.png" alt="Mobile UI Design" loading="lazy">
+          <div class="gallery-caption">
+            <span class="caption-title">Graph UI Showcase</span>
+            <span class="caption-desc">Piesoft</span>
+          </div>
+        </div>
+         <div class="gallery-item">
+          <img src="/images/gallery/ui-6.png" alt="Mobile UI Design" loading="lazy">
+          <div class="gallery-caption">
+            <span class="caption-title">News Feed UI</span>
+            <span class="caption-desc">Feelgood</span>
+          </div>
+        </div>
+         <div class="gallery-item">
+          <img src="/images/gallery/ui-7.png" alt="Mobile UI Design" loading="lazy">
+          <div class="gallery-caption">
+            <span class="caption-title">Wallet UI</span>
+            <span class="caption-desc">Piesoft</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gallery Controls -->
+      <div class="gallery-controls">
+        <button class="gallery-btn gallery-prev" id="gallery-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <div class="gallery-progress">
+          <div class="gallery-progress-bar" id="gallery-progress"></div>
+        </div>
+        <button class="gallery-btn gallery-next" id="gallery-next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership Section -->
+<section class="leadership-section" id="leadership">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">Leadership</span>
+      <h2 class="section-title reveal-up">Achievements & Activities</h2>
+    </div>
+    
+    <div class="leadership-grid">
+      <div class="leadership-card reveal-up" data-delay="0">
+        <div class="leadership-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+        </div>
+        <h3>GeeksforGeeks Hackathon Finalist</h3>
+        <p>Contributed to the development of a pet adoption app using Flutter and Firebase.</p>
+      </div>
+      
+      <div class="leadership-card reveal-up" data-delay="100">
+        <div class="leadership-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <h3>GDG Core Member</h3>
+        <p>Core member of App and Web Development team at Google Developer Group on campus. Organized and led tech talks on Flutter and AWS.</p>
+      </div>
+      
+      <div class="leadership-card reveal-up" data-delay="200">
+        <div class="leadership-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <h3>Android Study Jams Mentor</h3>
+        <p>Mentored juniors on Git workflows and Firebase integration during Android Study Jams.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+  // Skill bar animations
+  const skillBars = document.querySelectorAll('.skill-progress');
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const progress = entry.target.dataset.progress;
+        entry.target.style.width = progress + '%';
+        skillObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  skillBars.forEach(bar => skillObserver.observe(bar));
+  
+  // Gallery functionality
+  const galleryTrack = document.getElementById('gallery-track');
+  const galleryItems = galleryTrack.querySelectorAll('.gallery-item');
+  const prevBtn = document.getElementById('gallery-prev');
+  const nextBtn = document.getElementById('gallery-next');
+  const progressBar = document.getElementById('gallery-progress');
+  
+  let currentIndex = 0;
+  const itemWidth = 100 / 3; // Show 3 items at a time on desktop
+  
+  function updateGallery() {
+    const offset = currentIndex * itemWidth;
+    galleryTrack.style.transform = `translateX(-${offset}%)`;
+    
+    // Update progress
+    const progress = ((currentIndex + 1) / (galleryItems.length - 2)) * 100;
+    progressBar.style.width = `${Math.min(progress, 100)}%`;
+  }
+  
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateGallery();
+    }
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < galleryItems.length - 3) {
+      currentIndex++;
+      updateGallery();
+    }
+  });
+  
+  // Touch/swipe support for gallery
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  galleryTrack.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  
+  galleryTrack.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+  
+  function handleSwipe() {
+    const diff = touchStartX - touchEndX;
+    if (diff > 50 && currentIndex < galleryItems.length - 1) {
+      currentIndex++;
+      updateGallery();
+    } else if (diff < -50 && currentIndex > 0) {
+      currentIndex--;
+      updateGallery();
+    }
+  }
+</script>
+{{ end }}

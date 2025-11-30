@@ -1,0 +1,46 @@
+baseURL = 'https://jheeljohari.com/'
+languageCode = 'en-us'
+title = 'Jheel Johari | Software Developer'
+
+[params]
+  author = "Jheel Johari"
+  description = "Innovative Software Developer specializing in Flutter, Java, and AWS"
+  defaultTheme = "dark"
+  
+[params.contact]
+  email = "jheeljohari1@gmail.com"
+  phone = "+91 7906687361"
+  location = "Budaun, India"
+  
+[params.social]
+  github = "https://github.com/jheel23"
+  linkedin = "https://www.linkedin.com/in/jheel-johari"
+  whatsapp = "https://wa.me/917906687361"
+
+[menu]  
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Experience"
+    url = "/experience/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  page = ["HTML"]

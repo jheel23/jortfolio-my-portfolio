@@ -1,0 +1,558 @@
+{{ define "main" }}
+<!-- Experience Hero -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <span class="page-label reveal-up">My Journey</span>
+    <h1 class="page-title reveal-up">Experience</h1>
+    <p class="page-subtitle reveal-up">
+      Professional work experience and the projects that shaped my career.
+    </p>
+  </div>
+  <div class="page-hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+  </div>
+</section>
+
+<!-- Work Timeline -->
+<section class="timeline-section" id="timeline">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">Professional Path</span>
+      <h2 class="section-title reveal-up">Work Experience</h2>
+    </div>
+    
+    <div class="timeline">
+      <!-- Experience 1 -->
+      <div class="timeline-item reveal-up" data-delay="0">
+        <div class="timeline-marker">
+          <div class="marker-dot"></div>
+          <div class="marker-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-company">
+              <h3>Flutter Developer</h3>
+              <span class="company-name">Persistent Digital Commerce</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-duration">8 months</span>
+              <span class="timeline-type">Remote</span>
+            </div>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-points">
+              <li>Developed scalable features for a hyperlocal e-commerce platform across seller and delivery applications</li>
+              <li>Integrated cloud-based services such as AWS EC2, Lambda, and live location APIs</li>
+              <li>Collaborated with backend teams and followed clean architecture practices to deliver production-ready components</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Flutter</span>
+              <span>AWS EC2</span>
+              <span>Lambda</span>
+              <span>Clean Architecture</span>
+            </div>
+          </div>
+          
+          <!-- Work Screenshots -->
+          {{/*  <div class="work-showcase">
+            <h4>Project Highlights</h4>
+            <div class="showcase-grid">
+              <!-- 
+                HOW TO ADD WORK SCREENSHOTS:
+                1. Place screenshots in /static/images/work/persistent/
+                2. Name them: screenshot-1.jpg, screenshot-2.jpg, etc.
+                3. Recommended size: 1200x800px
+              -->
+              <a href="/images/work/persistent/screenshot-1.jpg" class="showcase-item" data-lightbox="persistent">
+                <img src="/images/work/persistent/screenshot-1.jpg" alt="E-commerce App Screenshot" loading="lazy">
+                <span class="showcase-label">Seller Dashboard</span>
+              </a>
+              <a href="/images/work/persistent/screenshot-2.jpg" class="showcase-item" data-lightbox="persistent">
+                <img src="/images/work/persistent/screenshot-2.jpg" alt="Delivery App Screenshot" loading="lazy">
+                <span class="showcase-label">Delivery Tracking</span>
+              </a>
+            </div>
+            <!-- Production Links -->
+            <div class="production-links">
+              <a href="#" class="production-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View Live App</span>
+              </a>
+            </div>
+          </div>  */}}
+        </div>
+      </div>
+      
+      <!-- Experience 2 -->
+      <div class="timeline-item reveal-up" data-delay="100">
+        <div class="timeline-marker">
+          <div class="marker-dot"></div>
+          <div class="marker-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-company">
+              <h3>Java Backend Developer</h3>
+              <span class="company-name">Seequenze Pvt. Ltd.</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-duration">4 months</span>
+              <span class="timeline-type">Remote</span>
+            </div>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-points">
+              <li>Built backend services using Spring Boot to convert Figma node JSON into structured Flutter UI code</li>
+              <li>Developed logic for handling design node permutations, including nested structures and auto-layouts</li>
+              <li>Created a golden testing pipeline integrated with Jenkins and Discord, streamlining build validation</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>Jenkins</span>
+              <span>Figma API</span>
+            </div>
+          </div>
+          
+          <div class="work-showcase">
+            <h4>Project Highlights</h4>
+            <div class="showcase-grid">
+              <a href="/images/work/seequenze/screenshot-1.png" class="showcase-item" data-lightbox="seequenze">
+                <img src="/images/work/seequenze/screenshot-1.png" alt="Figma to Flutter Converter" loading="lazy">
+                <span class="showcase-label">Figma Converter</span>
+              </a>
+              <a href="/images/work/seequenze/screenshot-2.png" class="showcase-item" data-lightbox="seequenze">
+                <img src="/images/work/seequenze/screenshot-2.png" alt="Testing Pipeline" loading="lazy">
+                <span class="showcase-label">CI/CD Pipeline</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Experience 3 -->
+      <div class="timeline-item reveal-up" data-delay="200">
+        <div class="timeline-marker">
+          <div class="marker-dot"></div>
+          <div class="marker-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-company">
+              <h3>Flutter Developer</h3>
+              <span class="company-name">AcadQue Pvt. Ltd.</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-duration">4 months</span>
+              <span class="timeline-type">Remote</span>
+            </div>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-points">
+              <li>Contributed to a digital wellness app called Feelgood by enhancing the architecture with MVVM</li>
+              <li>Developed interactive game modules such as Chess and Tic Tac Toe</li>
+              <li>Ensured responsive UI across devices and supported the app release process for Play Store</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Flutter</span>
+              <span>MVVM</span>
+              <span>Game Dev</span>
+              <span>Play Store</span>
+            </div>
+          </div>
+          
+          <div class="work-showcase">
+            <h4>Project Highlights</h4>
+            <div class="showcase-grid">
+              <a href="/images/work/acadque/screenshot-2.png" class="showcase-item" data-lightbox="acadque">
+                <img src="/images/work/acadque/screenshot-2.png" alt="Game Modules" loading="lazy">
+                <span class="showcase-label">Feelgood App</span>
+              </a>
+              <a href="/images/work/acadque/screenshot-1.jpg" class="showcase-item" data-lightbox="acadque">
+                <img src="/images/work/acadque/screenshot-1.jpg" alt="Feelgood App" loading="lazy">
+                <span class="showcase-label">Full View</span>
+              </a>
+              
+            </div>
+            {{/*  <div class="production-links">
+              <a href="#" class="production-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View on Play Store</span>
+              </a>
+            </div>  */}}
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Experience 4 -->
+      <div class="timeline-item reveal-up" data-delay="300">
+        <div class="timeline-marker">
+          <div class="marker-dot"></div>
+          <div class="marker-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-company">
+              <h3>Mobile Application Developer</h3>
+              <span class="company-name">Piesoft Technologies</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-duration">Current</span>
+              <span class="timeline-type">Remote</span>
+            </div>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-points">
+              <li>Contributed to empowering businesses with intelligent ERP solutions and cutting-edge technology</li>
+              <li>Developed multiple mobile applications to achieve any requirement. Sales, IoT, Jobs and other applications</li>
+              <li>Ensured responsive UI across devices and supported the app release process for Play Store</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Flutter</span>
+              <span>Clean Architecture</span>
+              <span>Kotlin</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+          
+          <div class="work-showcase">
+            <h4>Project Highlights</h4>
+            <div class="showcase-grid">
+              <a href="/images/work/piesoft/screenshot-1.png" class="showcase-item" data-lightbox="piesoft">
+                <img src="/images/work/piesoft/screenshot-1.png" alt="Game Modules" loading="lazy">
+                <span class="showcase-label">Piesoft Diary Solution</span>
+              </a>
+              <a href="/images/work/piesoft/screenshot-2.png" class="showcase-item" data-lightbox="piesoft">
+                <img src="/images/work/piesoft/screenshot-2.png" alt="Feelgood App" loading="lazy">
+                <span class="showcase-label">Full View</span>
+              </a>
+              
+            </div>
+            {{/*  <div class="production-links">
+              <a href="#" class="production-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View on Play Store</span>
+              </a>
+            </div>  */}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Code Practices Section -->
+<section class="code-practices-section" id="code-practices">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">Best Practices</span>
+      <h2 class="section-title reveal-up">How I Code</h2>
+      <p class="section-subtitle reveal-up">
+        Code snippets and project structures showcasing my development practices.
+      </p>
+    </div>
+    
+    <!-- Code Carousel -->
+    <div class="code-carousel reveal-up">
+      <div class="carousel-track" id="code-carousel-track">
+        <!-- Code Card 1 -->
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="code-card-title">Clean Architecture</span>
+            <span class="code-card-lang">Dart / Flutter</span>
+          </div>
+          <div class="code-card-body">
+            <pre><code class="language-dart">// Domain Layer - Use Cases
+abstract class UseCase&lt;Type, Params&gt; {
+  Future&lt;Either&lt;Failure, Type&gt;&gt; call(Params params);
+}
+
+class GetUserProfile implements UseCase&lt;User, String&gt; {
+  final UserRepository repository;
+  
+  GetUserProfile(this.repository);
+  
+  @override
+  Future&lt;Either&lt;Failure, User&gt;&gt; call(String userId) {
+    return repository.getUserById(userId);
+  }
+}</code></pre>
+          </div>
+          <div class="code-card-footer">
+            <span class="practice-tag">SOLID Principles</span>
+            <span class="practice-tag">Separation of Concerns</span>
+          </div>
+        </div>
+        
+        <!-- Code Card 2 -->
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="code-card-title">MVVM Pattern</span>
+            <span class="code-card-lang">Dart / Flutter</span>
+          </div>
+          <div class="code-card-body">
+            <pre><code class="language-dart">class HomeViewModel extends ChangeNotifier {
+  final GetMoviesUseCase _getMovies;
+  
+  ViewState _state = ViewState.idle;
+  List&lt;Movie&gt; _movies = [];
+  
+  ViewState get state => _state;
+  List&lt;Movie&gt; get movies => _movies;
+  
+  Future&lt;void&gt; loadMovies() async {
+    _state = ViewState.loading;
+    notifyListeners();
+    
+    final result = await _getMovies();
+    result.fold(
+      (failure) => _state = ViewState.error,
+      (data) {
+        _movies = data;
+        _state = ViewState.loaded;
+      },
+    );
+    notifyListeners();
+  }
+}</code></pre>
+          </div>
+          <div class="code-card-footer">
+            <span class="practice-tag">State Management</span>
+            <span class="practice-tag">Testable Code</span>
+          </div>
+        </div>
+        
+        <!-- Code Card 3 -->
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="code-card-title">REST API Integration</span>
+            <span class="code-card-lang">Java / Spring Boot</span>
+          </div>
+          <div class="code-card-body">
+            <pre><code class="language-java">@RestController
+@RequestMapping("/api/v1/designs")
+public class DesignController {
+    
+    private final DesignConversionService service;
+    
+    @PostMapping("/convert")
+    public ResponseEntity&lt;FlutterCode&gt; convertDesign(
+            @Valid @RequestBody FigmaNode node) {
+        
+        FlutterCode result = service.convert(node);
+        return ResponseEntity.ok(result);
+    }
+    
+    @ExceptionHandler(ConversionException.class)
+    public ResponseEntity&lt;ErrorResponse&gt; handleError(
+            ConversionException ex) {
+        return ResponseEntity
+            .status(HttpStatus.BAD_REQUEST)
+            .body(new ErrorResponse(ex.getMessage()));
+    }
+}</code></pre>
+          </div>
+          <div class="code-card-footer">
+            <span class="practice-tag">RESTful Design</span>
+            <span class="practice-tag">Error Handling</span>
+          </div>
+        </div>
+        
+        <!-- Code Card 4 - Folder Structure -->
+        <div class="code-card folder-card">
+          <div class="code-card-header">
+            <span class="code-card-title">Project Structure</span>
+            <span class="code-card-lang">Flutter</span>
+          </div>
+          <div class="code-card-body">
+            <!-- 
+              HOW TO ADD FOLDER STRUCTURE SCREENSHOT:
+              1. Take a screenshot of your project folder structure
+              2. Place in /static/images/code/
+              3. Replace placeholder below
+            -->
+            <div class="folder-screenshot">
+              <img src="/images/code/folder-structure.png" alt="Clean Architecture Folder Structure" loading="lazy">
+            </div>
+          </div>
+          <div class="code-card-footer">
+            <span class="practice-tag">Modular</span>
+            <span class="practice-tag">Scalable</span>
+          </div>
+        </div>
+        
+        <!-- Code Card 5 -->
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="code-card-title">AWS Lambda Handler</span>
+            <span class="code-card-lang">Python</span>
+          </div>
+          <div class="code-card-body">
+            <pre><code class="language-python">import json
+import boto3
+from typing import Dict, Any
+
+def lambda_handler(event: Dict, context) -> Dict[str, Any]:
+    """
+    Process incoming delivery updates
+    and broadcast to connected clients.
+    """
+    try:
+        body = json.loads(event['body'])
+        delivery_id = body['delivery_id']
+        location = body['location']
+        
+        # Update DynamoDB
+        table.update_item(
+            Key={'id': delivery_id},
+            UpdateExpression='SET location = :loc',
+            ExpressionAttributeValues={':loc': location}
+        )
+        
+        return {
+            'statusCode': 200,
+            'body': json.dumps({'status': 'updated'})
+        }
+    except Exception as e:
+        return {
+            'statusCode': 500,
+            'body': json.dumps({'error': str(e)})
+        }</code></pre>
+          </div>
+          <div class="code-card-footer">
+            <span class="practice-tag">Serverless</span>
+            <span class="practice-tag">Type Hints</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carousel Controls -->
+      <div class="carousel-controls">
+        <button class="carousel-btn carousel-prev" id="code-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <div class="carousel-indicators" id="carousel-indicators">
+          <button class="indicator active" data-index="0"></button>
+          <button class="indicator" data-index="1"></button>
+          <button class="indicator" data-index="2"></button>
+          <button class="indicator" data-index="3"></button>
+          <button class="indicator" data-index="4"></button>
+        </div>
+        <button class="carousel-btn carousel-next" id="code-next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+  // Code Carousel
+  const carouselTrack = document.getElementById('code-carousel-track');
+  const codeCards = carouselTrack.querySelectorAll('.code-card');
+  const codePrev = document.getElementById('code-prev');
+  const codeNext = document.getElementById('code-next');
+  const indicators = document.querySelectorAll('.carousel-indicators .indicator');
+  
+  let currentCard = 0;
+  
+  function updateCarousel() {
+    const cardWidth = codeCards[0].offsetWidth + 24; // Include gap
+    carouselTrack.style.transform = `translateX(-${currentCard * cardWidth}px)`;
+    
+    indicators.forEach((ind, i) => {
+      ind.classList.toggle('active', i === currentCard);
+    });
+  }
+  
+  codePrev.addEventListener('click', () => {
+    if (currentCard > 0) {
+      currentCard--;
+      updateCarousel();
+    }
+  });
+  
+  codeNext.addEventListener('click', () => {
+    if (currentCard < codeCards.length - 1) {
+      currentCard++;
+      updateCarousel();
+    }
+  });
+  
+  indicators.forEach((ind, index) => {
+    ind.addEventListener('click', () => {
+      currentCard = index;
+      updateCarousel();
+    });
+  });
+  
+  // Touch support
+  let codeStartX = 0;
+  carouselTrack.addEventListener('touchstart', (e) => {
+    codeStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  
+  carouselTrack.addEventListener('touchend', (e) => {
+    const diff = codeStartX - e.changedTouches[0].screenX;
+    if (diff > 50 && currentCard < codeCards.length - 1) {
+      currentCard++;
+      updateCarousel();
+    } else if (diff < -50 && currentCard > 0) {
+      currentCard--;
+      updateCarousel();
+    }
+  }, { passive: true });
+  
+  // Lightbox for work screenshots
+  const lightboxItems = document.querySelectorAll('[data-lightbox]');
+  
+  lightboxItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      const imgSrc = item.href;
+      const lightbox = document.createElement('div');
+      lightbox.className = 'lightbox';
+      lightbox.innerHTML = `
+        <div class="lightbox-content">
+          <button class="lightbox-close" aria-label="Close">&times;</button>
+          <img src="${imgSrc}" alt="Work screenshot">
+        </div>
+      `;
+      document.body.appendChild(lightbox);
+      document.body.style.overflow = 'hidden';
+      
+      setTimeout(() => lightbox.classList.add('active'), 10);
+      
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+          lightbox.classList.remove('active');
+          setTimeout(() => {
+            document.body.removeChild(lightbox);
+            document.body.style.overflow = '';
+          }, 300);
+        }
+      });
+    });
+  });
+</script>
+{{ end }}

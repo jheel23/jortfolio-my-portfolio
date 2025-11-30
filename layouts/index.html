@@ -1,0 +1,392 @@
+{{ define "main" }}
+<!-- Hero Section with Philosophical Quote -->
+<section class="hero" id="hero">
+  <div class="hero-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="grid-pattern"></div>
+  </div>
+  
+  <div class="hero-content">
+    <!-- Rotating Quotes -->
+    <div class="quote-carousel" id="quote-carousel">
+      <div class="quote-wrapper">
+        <blockquote class="philosophical-quote active" data-index="0">
+          <p>"The unexamined life is not worth living."</p>
+          <cite>— Socrates</cite>
+        </blockquote>
+        <blockquote class="philosophical-quote" data-index="1">
+          <p>"Be kind, for everyone you meet is fighting a hard battle."</p>
+          <cite>— Plato</cite>
+        </blockquote>
+        <blockquote class="philosophical-quote" data-index="2">
+          <p>"The ability to observe without evaluating is the highest form of intelligence."</p>
+          <cite>— J. Krishnamurti</cite>
+        </blockquote>
+        <blockquote class="philosophical-quote" data-index="3">
+          <p>"Freedom is not worth having if it does not include the freedom to make mistakes."</p>
+          <cite>— Mahatma Gandhi</cite>
+        </blockquote>
+        <blockquote class="philosophical-quote" data-index="4">
+          <p>"In the middle of difficulty lies opportunity."</p>
+          <cite>— Albert Einstein</cite>
+        </blockquote>
+      </div>
+      <div class="quote-indicators">
+        <button class="quote-dot active" data-index="0" aria-label="Quote 1"></button>
+        <button class="quote-dot" data-index="1" aria-label="Quote 2"></button>
+        <button class="quote-dot" data-index="2" aria-label="Quote 3"></button>
+        <button class="quote-dot" data-index="3" aria-label="Quote 4"></button>
+        <button class="quote-dot" data-index="4" aria-label="Quote 5"></button>
+      </div>
+    </div>
+    
+    <!-- Introduction -->
+    <div class="intro-section">
+      <div class="intro-text">
+        <span class="intro-greeting reveal-text">Hello, I'm</span>
+        <h1 class="intro-name reveal-text">Jheel Johari</h1>
+        <p class="intro-title reveal-text">
+          <span class="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </p>
+        <p class="intro-description reveal-text">
+          Innovative Software Developer crafting elegant solutions with 
+          <span class="highlight">Flutter</span>, <span class="highlight">Java</span>, <span class="highlight">AWS</span>, <span class="highlight">Firebase</span>, and there are ton more.
+          Passionate about building scalable architectures and intuitive user experiences.
+        </p>
+        <div class="intro-cta reveal-text">
+          <a href="/contact/" class="btn btn-primary">
+            <span>Get in Touch</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="/about/" class="btn btn-secondary">
+            <span>View My Work</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="intro-image reveal-image">
+        <div class="image-frame">
+          <div class="image-glow"></div>
+          <!-- 
+            HOW TO ADD YOUR PROFILE IMAGE:
+            1. Place your image in /static/images/ folder
+            2. Name it "profile.jpg" (or .png, .webp)
+            3. Recommended size: 500x500px or larger (square aspect ratio)
+            4. Replace the placeholder below with: <img src="/images/profile.jpg" alt="Jheel Johari">
+          -->
+          <div class="image-placeholder">
+            <img src="/images/profile.jpg" alt="Jheel Johari - Software Developer" loading="eager">
+          </div>
+          <div class="image-border"></div>
+        </div>
+        
+        {{/*  <!-- Floating tech badges -->
+        <div class="floating-badges">
+          <span class="tech-badge badge-1">Flutter</span>
+          <span class="tech-badge badge-2">AWS</span>
+          <span class="tech-badge badge-3">Spring Boot</span>
+        </div>  */}}
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <div class="scroll-arrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- Work Glimpse Section -->
+<section class="work-glimpse" id="work-glimpse">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label reveal-up">Featured Work</span>
+      <h2 class="section-title reveal-up">A Glimpse of My Journey</h2>
+      <p class="section-subtitle reveal-up">
+        From digital wellness apps to e-commerce platforms, here's a snapshot of what I've been building.
+      </p>
+    </div>
+    
+    <div class="work-grid">
+      <!-- Work Card 1 -->
+      <article class="work-card reveal-up" data-delay="0">
+        <div class="card-image">
+          <!-- 
+            HOW TO ADD PROJECT IMAGE:
+            1. Place image in /static/images/projects/ folder
+            2. Name appropriately (e.g., "feelgood-app.jpg")
+            3. Recommended size: 800x600px
+            4. Replace placeholder src below
+          -->
+          <img src="/images/projects/feelgood.jpg" alt="Feelgood Digital Wellness App" loading="lazy">
+          <div class="card-overlay">
+            <span class="card-category">Mobile Development</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Feelgood Wellness App</h3>
+          <p class="card-description">Enhanced architecture with MVVM pattern, developed interactive game modules, and optimized performance for Play Store release.</p>
+          <div class="card-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">MVVM</span>
+            <span class="tag">Games</span>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Work Card 2 -->
+      <article class="work-card reveal-up" data-delay="100">
+        <div class="card-image">
+          <img src="/images/projects/ecommerce.jpg" alt="Hyperlocal E-commerce Platform" loading="lazy">
+          <div class="card-overlay">
+            <span class="card-category">Full Stack</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Hyperlocal E-commerce</h3>
+          <p class="card-description">Developed scalable features for seller and delivery applications with AWS integration and live location tracking.</p>
+          <div class="card-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Lambda</span>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Work Card 3 -->
+      <article class="work-card reveal-up" data-delay="200">
+        <div class="card-image">
+          <img src="/images/projects/zest.jpg" alt="ZEST Movie Streaming App" loading="lazy">
+          <div class="card-overlay">
+            <span class="card-category">Personal Project</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">ZEST Streaming App</h3>
+          <p class="card-description">Cross-platform movie discovery app with TMDB API integration, Auth0 authentication, and intuitive filtering.</p>
+          <div class="card-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Auth0</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    
+    <div class="section-cta reveal-up">
+      <a href="/experience/" class="btn btn-outline">
+        <span>View All Projects</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="section-container">
+    <div class="stats-grid">
+      <div class="stat-item reveal-up" data-delay="0">
+        <span class="stat-number" data-count="21">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Months Experience</span>
+      </div>
+      <div class="stat-item reveal-up" data-delay="100">
+        <span class="stat-number" data-count="8">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Projects Delivered</span>
+      </div>
+      <div class="stat-item reveal-up" data-delay="200">
+        <span class="stat-number" data-count="4">0</span>
+        <span class="stat-suffix"></span>
+        <span class="stat-label">Companies Worked</span>
+      </div>
+      <div class="stat-item reveal-up" data-delay="300">
+        <span class="stat-number" data-count="8">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Technologies Mastered</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick About Section -->
+<section class="quick-about">
+  <div class="section-container">
+    <div class="about-split">
+      <div class="about-text">
+        <span class="section-label reveal-up">About Me</span>
+        <h2 class="section-title reveal-up">Crafting Code with Purpose</h2>
+        <p class="reveal-up">
+          I'm a B.Tech Computer Science student at VIT Amaravati, passionate about building software that makes a difference. 
+          My journey spans from mobile development with Flutter to backend systems with Spring Boot, always focusing on 
+          clean architecture and user-centric design.
+        </p>
+        <p class="reveal-up">
+          Beyond coding, I'm an active member of Google Developer Group on campus, where I organize tech talks 
+          and mentor fellow developers on modern development practices.
+        </p>
+        <a href="/about/" class="btn btn-text reveal-up">
+          <span>Learn more about me</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="about-highlights">
+        <div class="highlight-card reveal-up" data-delay="0">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Mobile First</h3>
+          <p>Specialized in cross-platform development with Flutter</p>
+        </div>
+        
+        <div class="highlight-card reveal-up" data-delay="100">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3>Clean Code</h3>
+          <p>MVVM, Clean Architecture, and best practices advocate</p>
+        </div>
+        
+        <div class="highlight-card reveal-up" data-delay="200">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+            </svg>
+          </div>
+          <h3>Cloud Native</h3>
+          <p>AWS EC2, Lambda, S3, and Firebase integration expert</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+  // Typing animation for hero
+  const titles = [
+    'Software Developer',
+    'Flutter Enthusiast',
+    'Problem Solver',
+    'Open Source Contributor'
+  ];
+  
+  let titleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typingElement = document.querySelector('.typing-text');
+  
+  function type() {
+    const currentTitle = titles[titleIndex];
+    
+    if (isDeleting) {
+      typingElement.textContent = currentTitle.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typingElement.textContent = currentTitle.substring(0, charIndex + 1);
+      charIndex++;
+    }
+    
+    let typeSpeed = isDeleting ? 50 : 100;
+    
+    if (!isDeleting && charIndex === currentTitle.length) {
+      typeSpeed = 2000;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      titleIndex = (titleIndex + 1) % titles.length;
+      typeSpeed = 500;
+    }
+    
+    setTimeout(type, typeSpeed);
+  }
+  
+  // Start typing animation
+  setTimeout(type, 1000);
+  
+  // Quote carousel
+  const quotes = document.querySelectorAll('.philosophical-quote');
+  const dots = document.querySelectorAll('.quote-dot');
+  let currentQuote = 0;
+  
+  function showQuote(index) {
+    quotes.forEach((q, i) => {
+      q.classList.toggle('active', i === index);
+    });
+    dots.forEach((d, i) => {
+      d.classList.toggle('active', i === index);
+    });
+  }
+  
+  function nextQuote() {
+    currentQuote = (currentQuote + 1) % quotes.length;
+    showQuote(currentQuote);
+  }
+  
+  // Auto-rotate quotes
+  setInterval(nextQuote, 6000);
+  
+  // Manual quote selection
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentQuote = index;
+      showQuote(currentQuote);
+    });
+  });
+  
+  // Counter animation
+  const counters = document.querySelectorAll('.stat-number');
+  const observerOptions = {
+    threshold: 0.5
+  };
+  
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        const target = parseInt(counter.dataset.count);
+        let current = 0;
+        const increment = target / 50;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            counter.textContent = target;
+            clearInterval(timer);
+          } else {
+            counter.textContent = Math.floor(current);
+          }
+        }, 30);
+        counterObserver.unobserve(counter);
+      }
+    });
+  }, observerOptions);
+  
+  counters.forEach(counter => counterObserver.observe(counter));
+</script>
+{{ end }}
